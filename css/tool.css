@@ -62,9 +62,10 @@
 
 .custom-shape-divider-top-1694674746 {
     width: 100%;
+    height: 1000px;
     overflow: hidden;
     line-height: 0;
-    transform:scaleX(1.5)
+    transform:scaleX(2)
 }
 
 .custom-shape-divider-top-1694674746 svg {
