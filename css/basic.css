@@ -324,6 +324,7 @@ nav {
   border: 1px solid #eee;
   margin: 20px auto 0 ;
   border-radius: 10px 10px 0 0;
+  z-index: 10;
 }
 
 nav ul {
