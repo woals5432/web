@@ -362,6 +362,5 @@ nav ul li img {
 }
 @media (min-width: 576px){
   .container, .container-sm {
-    min-width: 640px;
 }
 }
