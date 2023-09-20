@@ -145,16 +145,17 @@ header>h1 {
 }
 
 .tap-body li {
-  width:40%
+  width:30%;
+  height: 90%;
+  object-fit:fill;
 }
 .tap-body > ul > li img{
   width:100%;
-  height: 100%;
+  
 }
 
 .tap-body-text {
   width: 95%;
-  height: 26px;
   display: flex;
   justify-content: space-around;
   color: black;
@@ -184,18 +185,18 @@ header>h1 {
   font-size: 20px;
 }
 
-.accordion-body>img {
-  width: 180px;
+.accordion-body {
+  display:flex;
+  
+  justify-content: space-evenly;
+}
+.accordion-body>img {  
   height: 230px;
-  margin-right: 10px;
   border-radius: 20px 20px 20px 0;
   border: 1px solid #eee;
 }
 
-.accordion-body {
-  display:flex;
-  justify-content: space-evenly;
-}
+
 
 /* today */
 .today {
