@@ -200,7 +200,7 @@ header>h1 {
 }
 
 .accordion-body>img {
-  height: 230px;
+  height: 260px;
   border-radius: 20px 20px 20px 0;
   border: 1px solid #eee;
   width: 30%;
@@ -451,7 +451,7 @@ nav ul li img {
   .main-first-textbox {
     justify-content: center;
   }
-}
+
 
 .tap-body {
   height: 300px;
@@ -499,4 +499,5 @@ nav ul li img {
 
 nav div {
   width: 312px;
+}
 }
