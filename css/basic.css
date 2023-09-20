@@ -84,6 +84,9 @@ header>h1 {
   color: white;
   white-space: pre-line;
   padding: 30px 0 0 20px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .main-first-textbox p {
@@ -187,15 +190,24 @@ header>h1 {
 
 .accordion-body {
   display:flex;
-  
+  flex-wrap:wrap;
   justify-content: space-evenly;
 }
 .accordion-body>img {  
   height: 230px;
   border-radius: 20px 20px 20px 0;
   border: 1px solid #eee;
+  width:30%;
 }
-
+/* .accordion-body>img:nth-child(1){
+  flex-grow:0.5;
+}
+.accordion-body>img:nth-child(2){
+  flex-grow:0.5;
+}
+.accordion-body>img:nth-child(3){
+  flex-grow:0.5;
+} */
 
 
 /* today */
