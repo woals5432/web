@@ -25,7 +25,7 @@ header {
 
 header>h1 {
   font-size: 20px;
-  margin:auto;
+  margin: auto;
 }
 
 .header-right {
@@ -40,12 +40,14 @@ header>h1 {
   display: inline-block;
 
 }
-.search{
-  width:10%;
+
+.search {
+  width: 10%;
   height: 100%;
   text-align: center;
   vertical-align: middle;
 }
+
 .search>img {
   width: 90%;
   height: 90%;
@@ -73,18 +75,20 @@ header>h1 {
 }
 
 .main-first-img {
-  width:50%;
+  width: 50%;
 }
-.main-first-img img{
-  width:100%;
+
+.main-first-img img {
+  width: 100%;
 }
+
 .main-first-textbox {
   width: 50%;
   height: 100%;
   color: white;
   white-space: pre-line;
   padding: 30px 0 0 20px;
-  display:flex;
+  display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
@@ -140,7 +144,7 @@ header>h1 {
 }
 
 .tap-body ul {
-  width:100%;
+  width: 100%;
   height: 86%;
   display: flex;
   justify-content: space-around;
@@ -148,12 +152,13 @@ header>h1 {
 }
 
 .tap-body li {
-  width:30%;
+  width: 30%;
   height: 90%;
-  object-fit:fill;
+  object-fit: fill;
 }
-.tap-body > ul > li img{
-  width:100%;
+
+.tap-body>ul>li img {
+  width: 100%;
   height: 100%;
 }
 
@@ -164,7 +169,7 @@ header>h1 {
   color: black;
   font-size: 18px;
   text-align: center;
-  margin:auto;
+  margin: auto;
 }
 
 .tap-body-text1 {
@@ -189,15 +194,16 @@ header>h1 {
 }
 
 .accordion-body {
-  display:flex;
-  flex-wrap:wrap;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.accordion-body>img {  
+
+.accordion-body>img {
   height: 230px;
   border-radius: 20px 20px 20px 0;
   border: 1px solid #eee;
-  width:30%;
+  width: 30%;
 }
 
 /* today */
@@ -345,11 +351,15 @@ header>h1 {
 /* nav */
 nav {
   position: fixed;
-  bottom: 0;
+  bottom: -1px;
   right: 50%;
   transform: translate(50%);
+
+}
+
+nav div {
   background: white;
-  width: 80%;
+  width: 512px;
   height: 43px;
   border: 1px solid #eee;
   margin: 20px auto 0;
@@ -358,7 +368,7 @@ nav {
 }
 
 nav ul {
-  
+
   width: 100%;
   display: flex;
   height: 100%;
@@ -391,43 +401,102 @@ nav ul li img {
   height: 100%;
 }
 
-@media (max-width:500px){
-  .main-first-textbox{
+/* 다크 */
+.mode {
+  position: fixed;
+  bottom: 110px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+  border-radius: 9999px;
+  font-size: 13px;
+  background: black;
+  color: white;
+}
+
+.dark * {
+  background: black;
+  color: white;
+  /* filter: invert(100%) */
+}
+
+/* 로그인 팝업 */
+.black-bg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+  padding: 30px;
+  transition: all 1s;
+}
+
+.white-bg {
+  margin: auto;
+  background: white;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* 반응형 */
+@media (max-width:500px) {
+  .main-first-textbox {
     justify-content: center;
-    
   }
-  .tap-body{
-    height:300px;
-  }
-  .tap-body > ul{
-    height: 210px;
-  }
-  .tap-body > ul > li img{
-    width:106px;
-    height: 180px;
-  }
-  .tap-body-text{
-    font-size: 15px;
-    justify-content: space-between;
-  }
-  .tap-body-text1{
-    width:43%;
-  }
-  .tap-body-text2{
-    width:43%;
-  }
-  .accordion-body>img{
-    height: 160px;
-  }
-  .today{
-    height: 600px;
-  }
-  .today-img{
-    width:200px;
-    height: 300px;
-  }
-  .today-img img{
-    width:200px;
-    height: 300px;
-  }
+}
+
+.tap-body {
+  height: 300px;
+}
+
+.tap-body>ul {
+  height: 210px;
+}
+
+.tap-body>ul>li img {
+  width: 106px;
+  height: 180px;
+}
+
+.tap-body-text {
+  font-size: 15px;
+  justify-content: space-between;
+}
+
+.tap-body-text1 {
+  width: 43%;
+}
+
+.tap-body-text2 {
+  width: 43%;
+}
+
+.accordion-body>img {
+  height: 160px;
+}
+
+.today {
+  height: 600px;
+}
+
+.today-img {
+  width: 200px;
+  height: 300px;
+}
+
+.today-img img {
+  width: 200px;
+  height: 300px;
+}
+
+nav div {
+  width: 312px;
 }
