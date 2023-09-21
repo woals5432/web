@@ -12,14 +12,11 @@ const sdMn = document.querySelector('.slideMenu');
 const mn = document.querySelector('.menu');
 const mBg = document.querySelector('.menu-bg');
 const mC = document.querySelector('.menu-close');
-const mA = document.querySelectorAll('.menu > ul > li>a');
+const mA = document.querySelectorAll('.menu > ul > li > a');
 
-// 슬라이드 메뉴 바로가기
-const mainF = document.querySelector('.main-first')
-const tap = document.querySelector('.tap')
-// const accMain = document.querySelector('.accordion-main'); 
-const today = document.querySelector('.today')
-const best = document.querySelector('.best')
+// 내비바
+const nav = document.querySelector('nav');
+let pos = { y:0, oldY:0, status:true};
 
 // 다크모드
 let count = 0;
@@ -80,21 +77,21 @@ mC.addEventListener('click', function () {
 // 슬라이드 메뉴 바로가기
 mA.forEach(function(aa,i){
     aa.addEventListener('click',function(e){
-        console.log('클릭');
+        document.querySelector(`#s${i+1}`).scrollIntoView()
         e.preventDefault();
     })
 })
 
-/*
-    const menuItems = document.querySelectorAll('nav ul>li>a');
+// 내브바
+window.addEventListener('scroll',function(){
+    pos.y = window.scrollY;
+    pos.status = pos.oldY > pos.y;
+    pos.oldY = pos.y;
 
-    menuItems.forEach(function(item,idx){
-    item.onclick = function(e){
-        e.preventDefault();
-        document.querySelector(`#s${idx+1}`).scrollIntoView({
-        behavior:'smooth'
-        })
+    if(pos.status){
+        nav.style.visibility = 'visible'
+    }else{
+        nav.style.visibility = 'hidden'
     }
-    })
-*/ 
+})
 

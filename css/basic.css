@@ -354,7 +354,7 @@ nav {
   bottom: -1px;
   right: 50%;
   transform: translate(50%);
-
+  visibility: hidden;
 }
 
 nav div {
@@ -421,7 +421,7 @@ nav ul li img {
 }
 
 .dark .nav-ul>li>a>img{
-  filter:invert(100%)
+  filter:invert(1)
 }
 
 
@@ -457,7 +457,6 @@ nav ul li img {
   inset: 0;
   background: rgba(0, 0, 0, 0.8);
   z-index: 10;
-  transition:all 0.3s ;
 }
 
 .menu {
@@ -470,7 +469,6 @@ nav ul li img {
   background: white;
   z-index: 1001;
   transform: translateX();
-  transition:all 0.3s ;
 }
 
 .menu button {
