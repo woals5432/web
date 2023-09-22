@@ -58,7 +58,7 @@
       <h1>도서 추천</h1>
       <div class="header-right">
         <div class="search"><img src="img/search.png" alt=""></div>
-        <input type="text" name="" id="" placeholder="검색">
+        <input type="text" name="" id="search" placeholder="검색">
       </div>
     </header>
 
@@ -89,19 +89,72 @@
         </ul>
 
         <div class="tap-body">
-          <div class="tap-body-top">
-            소설 베스트
-          </div>
-          <ul>
-            <li><img src="img/XL.jfif" alt=""></li>
-            <li><img src="img/04.jpg" alt=""></li>
-          </ul>
-          <div class="tap-body-text">
-            <div class="tap-body-text1">
-              <p>도시와 그 불확실한 벽</p>
+          <div id="genre1">
+            <div class="tap-body-top">
+              소설 베스트
             </div>
-            <div class="tap-body-text2">
-              <p>존재의 세 가지 거짓말</p>
+            <ul>
+              <li><img src="img/XL.jfif" alt=""></li>
+              <li><img src="img/04.jpg" alt=""></li>
+            </ul>
+            <div class="tap-body-text">
+              <div class="tap-body-text1">
+                <p>도시와 그 불확실한 벽</p>
+              </div>
+              <div class="tap-body-text2">
+                <p>존재의 세 가지 거짓말</p>
+              </div>
+            </div>
+          </div>
+          <div id="genre2">
+            <div class="tap-body-top">
+              소설 베스트
+            </div>
+            <ul>
+              <li><img src="img/XL.jfif" alt=""></li>
+              <li><img src="img/04.jpg" alt=""></li>
+            </ul>
+            <div class="tap-body-text">
+              <div class="tap-body-text1">
+                <p>도시와 그 불확실한 벽</p>
+              </div>
+              <div class="tap-body-text2">
+                <p>존재의 세 가지 거짓말</p>
+              </div>
+            </div>
+          </div>
+          <div id="genre3">
+            <div class="tap-body-top">
+              소설 베스트
+            </div>
+            <ul>
+              <li><img src="img/XL.jfif" alt=""></li>
+              <li><img src="img/04.jpg" alt=""></li>
+            </ul>
+            <div class="tap-body-text">
+              <div class="tap-body-text1">
+                <p>도시와 그 불확실한 벽</p>
+              </div>
+              <div class="tap-body-text2">
+                <p>존재의 세 가지 거짓말</p>
+              </div>
+            </div>
+          </div>
+          <div id="genre4">
+            <div class="tap-body-top">
+              소설 베스트
+            </div>
+            <ul>
+              <li><img src="img/XL.jfif" alt=""></li>
+              <li><img src="img/04.jpg" alt=""></li>
+            </ul>
+            <div class="tap-body-text">
+              <div class="tap-body-text1">
+                <p>도시와 그 불확실한 벽</p>
+              </div>
+              <div class="tap-body-text2">
+                <p>존재의 세 가지 거짓말</p>
+              </div>
             </div>
           </div>
         </div>
@@ -180,13 +233,57 @@
           </svg>
         </div>
 
-        <div class="today-img">
-          <img src="img/12.jpg" alt="총균쇠">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div>
+                <img src="img/12.jpg" class="d-block " alt="...">
+              </div>
+              <div class="carousel-caption d-md-block">
+                <h5>총,균,쇠</h5>
+                <p>인간 사회의 운명을 바꾼 힘</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div>
+                <img src="img/12.jpg" class="d-block " alt="...">
+              </div>
+              <div class="carousel-caption d-md-block">
+                <h5>총,균,쇠</h5>
+                <p>인간 사회의 운명을 바꾼 힘</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <img src="img/12.jpg" class="d-block " alt="...">
+              </div>
+              <div class="carousel-caption d-md-block">
+                <h5>총,균,쇠</h5>
+                <p>인간 사회의 운명을 바꾼 힘</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
-        <div class="today-text">
-          <p>총균쇠</p>
-        </div>
+
 
       </div>
     </div>
@@ -256,12 +353,12 @@
       </div>
     </div>
 
-    
+
     <nav>
       <div>
         <ul class="nav-ul">
-          <li><a href="#"><img src="img/home_icon.svg" alt=""></a></li>
-          <li><a href="#"><img src="img/search_icon.svg" alt=""></a></li>
+          <li><a href="index.html"><img src="img/home_icon.svg" alt=""></a></li>
+          <li><a href="#" class="navSearch"><img src="img/search_icon.svg" alt=""></a></li>
           <li><a href="#" class="login"><img src="img/user_icon.svg" alt=""></a></li>
           <li><a href="#" class="slideMenu"><img src="img/menu_icon.svg" alt=""></a></li>
         </ul>

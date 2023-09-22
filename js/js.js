@@ -18,6 +18,12 @@ const mA = document.querySelectorAll('.menu > ul > li > a');
 const nav = document.querySelector('nav');
 let pos = { y:0, oldY:0, status:true};
 
+const navSearch = document.querySelector('.navSearch')
+
+// 탭 메뉴
+const tap = document.querySelectorAll('.tap-menu > li > a');
+
+
 // 다크모드
 let count = 0;
 document.querySelector('.mode').addEventListener('click', function () {
@@ -95,3 +101,29 @@ window.addEventListener('scroll',function(){
     }
 })
 
+// 검색
+navSearch.addEventListener('click',function(e){
+    document.querySelector('#search').focus()
+    e.preventDefault();
+})
+
+// 탭
+tap.forEach(function(aa,i){
+    aa.addEventListener('click',function(e){
+        document.querySelector(`#genre${i+1}`).classList.add('on');        
+        e.preventDefault();        
+    })
+})
+
+// $('.tapMenu li').click(function(){
+//     let num = $(this).index(); //몇번째 li를 클릭했는지 알아옴
+//     console.log(num);
+
+//     $('.tapMenu li').removeClass('active');
+//     $(this).addClass('active')
+    
+//     $('.tapBody > div').hide()
+//     $('.tapBody > div').eq(num).show();
+//   })
+
+//   $('.tapBody > div:gt(0)').hide();
