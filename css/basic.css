@@ -24,8 +24,10 @@ header {
 }
 
 header>h1 {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
   margin: auto;
+  color: #43655A;
 }
 
 .header-right {
@@ -66,8 +68,7 @@ header>h1 {
 /* first */
 .main-first {
   width: 100%;
-  height: 500px;
-  background: linear-gradient(100deg, rgb(0, 0, 0), rgb(42, 39, 42));
+  height: 400px;
   display: flex;
   position: relative;
   padding: 30px;
@@ -79,15 +80,18 @@ header>h1 {
 }
 
 .main-first-img img {
-  width: 100%;
+  width: 80%;
+  box-shadow: 2px 2px 12px #5d5d5d;
+  float: right;
+  border-radius: 10px;
 }
 
 .main-first-textbox {
   width: 50%;
   height: 100%;
-  color: white;
+  color: #221e1e;
   white-space: pre-line;
-  padding: 30px 0 0 20px;
+  padding: 80px 0 0 20px;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -95,13 +99,16 @@ header>h1 {
 
 .main-first-textbox p {
   font-size: 30px;
-  font-weight: bold;
+  font-weight: 900;
+}
+
+.main-first-textbox span {
+  font-size: 20px;
 }
 
 /* tap */
 .tap {
   width: 100%;
-  background: linear-gradient(180deg, rgb(165, 174, 157), rgb(255, 255, 255));
   margin-top: 20px;
 
 }
@@ -115,6 +122,8 @@ header>h1 {
   justify-content: space-around;
   margin: 10px 0;
   background: white;
+  color: #B1BDC5;
+  margin-bottom: 5px;
 }
 
 .tap-menu li {
@@ -125,27 +134,34 @@ header>h1 {
 }
 
 .tap-menu li:nth-child(1) {
-  background: #BFC094
+  background: #B1BDC5;
+  color: white;
+  font-weight: bold;
 }
 
 /* tap body */
-.on{
+.on {
   visibility: visible;
 }
-#genre2,#genre3,#genre4{
-  visibility:hidden;
+
+#genre2,
+#genre3,
+#genre4 {
+  visibility: hidden;
 }
+
 .tap-body {
   width: 100%;
   height: 405px;
   padding: 20px 20px 0 20px;
+  background: #fff0d9;
 }
 
 .tap-body-top {
   display: flex;
   justify-content: center;
   line-height: 20px;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -166,16 +182,18 @@ header>h1 {
 .tap-body ul li img {
   width: 100%;
   height: 100%;
+  box-shadow: 2px 4px 5px #8c8c8c;
 }
 
 .tap-body-text {
-  width: 95%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  color: black;
+  color: #808080;
   font-size: 18px;
   text-align: center;
   margin: auto;
+  font-size: 16px;
 }
 
 .tap-body-text1 {
@@ -197,6 +215,15 @@ header>h1 {
 
 .accordion-header button {
   font-size: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #D1D1B7;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
 }
 
 .accordion-body {
@@ -228,6 +255,7 @@ header>h1 {
   right: 50%;
   color: black;
   font-size: 30px;
+  font-weight: bold;
   z-index: 2;
   transform: translate(50%);
   white-space: nowrap;
@@ -289,14 +317,14 @@ header>h1 {
   width: 100%;
   height: 1600px;
   background: white;
-  margin-top: 0px;
-  padding: 20px;
-  border-top: 10px solid #eee;
+  margin-top: 20px;
+  padding: 10px;
 }
 
-.best-text {
-  font-size: 27px;
+.best-text span {
+  font-size: 30px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .best-text-day {
@@ -312,7 +340,7 @@ header>h1 {
 }
 
 .best-list {
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -388,7 +416,7 @@ nav div {
   border: 1px solid #eee;
   margin: 20px auto 0;
   border-radius: 10px 10px 0 0;
-  z-index: 10;
+  z-index: 20;
 }
 
 nav ul {
@@ -397,6 +425,7 @@ nav ul {
   display: flex;
   height: 100%;
   align-items: center;
+  z-index: 20;
 }
 
 nav ul li {
@@ -526,6 +555,7 @@ nav ul li img {
 @media (max-width:500px) {
   .main-first-textbox {
     justify-content: center;
+    padding: 0 0 0 20px;
   }
 
 
