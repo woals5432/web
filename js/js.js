@@ -80,10 +80,17 @@ mC.addEventListener('click', function () {
     mBg.style = 'visibility:hidden';
 })
 
+mBg.addEventListener('click',function(){
+    mn.style = 'visibility:hidden';
+    mBg.style = 'visibility:hidden';
+})
+
 // 슬라이드 메뉴 바로가기
 mA.forEach(function(aa,i){
     aa.addEventListener('click',function(e){
-        document.querySelector(`#s${i+1}`).scrollIntoView()
+        document.querySelector(`#s${i+1}`).scrollIntoView();
+        mn.style = 'visibility:hidden';
+    mBg.style = 'visibility:hidden';
         e.preventDefault();
     })
 })
