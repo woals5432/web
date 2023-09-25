@@ -115,22 +115,29 @@ navSearch.addEventListener('click',function(e){
 })
 
 // 탭
-tap.forEach(function(aa,i){
-    aa.addEventListener('click',function(e){
-        document.querySelector(`#genre${i+1}`).classList.add('on');        
-        e.preventDefault();        
-    })
-})
-
-// $('.tapMenu li').click(function(){
-//     let num = $(this).index(); //몇번째 li를 클릭했는지 알아옴
-//     console.log(num);
-
-//     $('.tapMenu li').removeClass('active');
-//     $(this).addClass('active')
+tap.forEach(function(aa, i) {
+  aa.addEventListener('click', function(e) {
+    //li co 제거
+    var allLi = document.querySelectorAll('.tap-menu > li');
+    allLi.forEach(function(li) {
+      li.classList.remove('co');
+    });
+    // 모든 genre 요소의 'on' 클래스를 제거합니다.
+    var allGenre = document.querySelectorAll('.genre');
+    allGenre.forEach(function(genre) {
+      genre.classList.remove('on');
+    });
     
-//     $('.tapBody > div').hide()
-//     $('.tapBody > div').eq(num).show();
-//   })
+    // 클릭한 탭에 해당하는 genre에 'on' 클래스를 추가합니다.
+    document.querySelector(`.genre${i + 1}`).classList.add('on');
+    allLi[i].classList.add('co');
+    e.preventDefault();
 
-//   $('.tapBody > div:gt(0)').hide();
+  });
+});
+// tap.forEach(function(aa,i){
+//     aa.addEventListener('click',function(e){
+//       document.querySelector(`.genre${i+1}`).classList.add('on');        
+//       e.preventDefault();
+//     })   
+// })
