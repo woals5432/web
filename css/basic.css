@@ -299,7 +299,8 @@ header>h1 {
 }
 
 .carousel-item p {
-  color: #BFC094
+  color: #BFC094;
+  font-size:18px;
 }
 
 .carousel-item>div img {
@@ -346,7 +347,7 @@ header>h1 {
   line-height: 15px;
   padding: 10px;
   margin: 20px 0;
-  color: #595959
+  color: #595959;
 }
 
 .best-list {
