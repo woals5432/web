@@ -490,10 +490,6 @@ nav ul li img {
   /* filter: invert(100%) */
 }
 
-.dark .nav-ul>li>a>img {
-  filter: invert(1)
-}
-
 
 /* 로그인 팝업 */
 .black-bg {
